@@ -22,35 +22,4 @@ public class APIErrors {
 	public void setTimeStamp(LocalDateTime timeStamp) {
 		this.timeStamp = timeStamp;
 	}
-	public HttpStatus getStatus() {
-		return status;
-	}
-	public void setStatus(HttpStatus status) {
-		this.status = status;
-	}
-	public List<String> getDetails() {
-		return details;
-	}
-	public void setDetails(List<String> details) {
-		this.details = details;
-	}
 	
-	
-	public APIErrors(String message, LocalDateTime timeStamp, HttpStatus status, List<String> details) {
-		super();
-		this.message = message;
-		this.timeStamp = timeStamp;
-		this.status = status;
-		this.details = details;
-	}
-	public APIErrors() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	@Override
-	public String toString() {
-		return "APIErrors [message=" + message + ", timeStamp=" + timeStamp + ", status=" + status + ", details="
-				+ details + "]";
-	}
-	
-}
